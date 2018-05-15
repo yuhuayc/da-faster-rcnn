@@ -396,6 +396,9 @@ message LayerParameter {
   optional ThresholdParameter threshold_param = 128;
   optional TileParameter tile_param = 138;
   optional WindowDataParameter window_data_param = 129;
+
+  optional GradientScalerParameter gradient_scaler_param = 200;
+
 }
 
 // Message that stores parameters used to apply transformation
@@ -1354,4 +1357,8 @@ message PReLUParameter {
   optional FillerParameter filler = 1;
   // Whether or not slope paramters are shared across channels.
   optional bool channel_shared = 2 [default = false];
+}
+
+message GradientScalerParameter {
+  optional float scale_factor = 1 [default = 0.0];
 }
