@@ -49,3 +49,6 @@ An example of adapting from **Cityscapes** dataset to **Foggy Cityscapes** datas
     ```Shell
     cd $FRCN_ROOT
     ./tools/test_net.py --gpu {GPU_ID} --def models/da_faster_rcnn/test.prototxt --net output/faster_rcnn_end2end/voc_2007_trainval/vgg16_da_faster_rcnn_iter_70000.caffemodel --imdb voc_2007_test --cfg models/da_faster_rcnn/faster_rcnn_end2end.yml
+
+### Other Implementation
+[Detectron-DA-Faster-RCNN](https://github.com/krumo/Detectron-DA-Faster-RCNN) in Caffe2(Detectron)
